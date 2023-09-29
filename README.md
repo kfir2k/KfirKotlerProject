@@ -9,7 +9,7 @@ Welcome to my portfolio website! This is a showcase of my projects, skills, and 
 - [Technologies](#technologies)
 
 ## Demo
-You can check out the live demo of the website [here] (#[https://your-portfolio-url.com](https://kfir2k.github.io/KfirKotlerProject/).
+You can check out the live demo of the website [here](#[https://your-portfolio-url.com](https://kfir2k.github.io/KfirKotlerProject/).
 
 ## Features
 - Responsive design that adapts to various screen sizes and devices.
