@@ -1,0 +1,154 @@
+.header{
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+    height:83px ;
+    border-top: 3px solid;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.border-primary-color {
+    border-color: #1AE0EC !important;
+
+}
+
+.space-fix-nav {
+    height: 83px;
+}
+
+
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    @include flex-center;
+    flex-direction: column;
+}
+
+@mixin flex-row-space {
+    @include flex-center;
+    justify-content: space-between;
+}
+
+
+.nav {
+    height: 83px;
+    @include flex-row-space;
+    flex-direction: row-reverse;
+    margin: auto;
+    max-width: 1316px;
+    // background-color: aqua;
+
+    .hamburger {
+        display: none;
+        color: #1AE0EC
+    }
+    ul{
+        @include flex-row-space;  
+        list-style-type: none;
+    }
+
+    a {
+        font-size: 1.4em;
+        font-family: Assistant;
+        justify-content: space-between;
+        margin-right: 50px;
+        margin-left: 10px ;
+        text-decoration: none;
+        color: black;
+        &:hover{
+            color:#1AE0EC;
+            // font-weight: bolder;
+        }
+
+
+    }
+
+    .nav-img-div {
+        font-family: 'Dancing Script', cursive;
+        // font-weight:lighter ;
+        // letter-spacing: -0.8px;
+        color: #444444;
+        font-size: 1.5em;
+        @include flex-row-space;
+        margin: 20px;
+        // width: 10vw;    
+
+
+        img {
+            // margin-right:5px ;
+            width: 62px;
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+
+    .nav-img-div{
+        margin: 20px;
+        img{
+            width: 41px !important;
+        }
+        p{
+            
+            display: none;
+        }
+    }
+
+
+    .nav{
+        background-color: rgb(255, 255, 255);
+        flex-wrap: wrap;
+        height: fit-content;
+        min-width: 159px;
+            // box-shadow: 0px 3px 6px #00000029;
+
+        
+        li a{
+            padding: 30px;
+            display: block;
+            width: 100vw;
+            margin: 0;
+            border-top: 1px solid rgb(230, 230, 230);
+        }
+
+        .hamburger{
+            display: block;
+            font-size: 50px;
+            margin-left: 20px;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .links{
+            display: none;
+            width: 100vw;
+        }
+
+        .hamburger:hover ~ .links{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: rgb(255, 255, 255);
+                // align-items: baseline;
+                
+
+
+
+            
+        }
+
+    }
+    
+}

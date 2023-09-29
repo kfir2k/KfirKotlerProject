@@ -1,0 +1,112 @@
+.header {
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  z-index: 999;
+  height: 83px;
+  border-top: 3px solid;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+.border-primary-color {
+  border-color: #1AE0EC !important;
+}
+
+.space-fix-nav {
+  height: 83px;
+}
+
+.nav {
+  height: 83px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: auto;
+  max-width: 1316px;
+}
+.nav .hamburger {
+  display: none;
+  color: #1AE0EC;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.nav a {
+  font-size: 1.4em;
+  font-family: Assistant;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+.nav a:hover {
+  color: #1AE0EC;
+}
+.nav .nav-img-div {
+  font-family: "Dancing Script", cursive;
+  color: #444444;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+.nav .nav-img-div img {
+  width: 62px;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-img-div {
+    margin: 20px;
+  }
+  .nav-img-div img {
+    width: 41px !important;
+  }
+  .nav-img-div p {
+    display: none;
+  }
+  .nav {
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-width: 159px;
+  }
+  .nav li a {
+    padding: 30px;
+    display: block;
+    width: 100vw;
+    margin: 0;
+    border-top: 1px solid rgb(230, 230, 230);
+  }
+  .nav .hamburger {
+    display: block;
+    font-size: 50px;
+    margin-left: 20px;
+    font-weight: bold;
+    background-color: white;
+  }
+  .nav .links {
+    display: none;
+    width: 100vw;
+  }
+  .nav .hamburger:hover ~ .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+  }
+}/*# sourceMappingURL=navbarsaas.css.map */
